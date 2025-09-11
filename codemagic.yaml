@@ -13,7 +13,7 @@ workflows:
         script: |
           test -n "$APP_STORE_CONNECT_ISSUER_ID" || (echo "ISSUER_ID empty" && exit 1)
           test -n "9DSZM45T65" || (echo "KEY_ID empty" && exit 1)
-          test -n "$APP_STORE_CONNECT_PRIVATE_KEY" || (echo "PRIVATE_KEY empty" && exit 1)
+          test -n "$MIGTAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBHkwdwIBAQQg5sPQ4xIsUNkiUPnHURenCt5t2y+g0NaoemF4xV1bJCagCgYIKoZIzj0DAQehRANCAASGQR1sb3IOHSdIMRZm7H6HVdiYfpu7EqmbrunFSTI56is9WlM9TY3GdWaa0gvbuCnHDiWFaTG5a+zv3G77fmiD" || (echo "PRIVATE_KEY empty" && exit 1)
 
       - name: Fetch signing files
         script: |
