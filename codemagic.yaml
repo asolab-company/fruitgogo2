@@ -5,7 +5,7 @@ workflows:
       xcode: 16.4
       ios_signing:
         distribution_type: app_store
-        bundle_identifier: com.fruitgogo.app
+        bundle_identifier: com.candypinkball.app
       groups:
         - Go Fruits
     scripts:
@@ -32,13 +32,13 @@ workflows:
 
       - name: Apply provisioning to project
         script: |
-          xcode-project use-profiles --project "Go Fruits.xcodeproj"
+          xcode-project use-profiles --project "Candy Pink Ball.xcodeproj"
 
       - name: Build iOS ipa
         script: |
           xcode-project build-ipa \
-            --project "Go Fruits.xcodeproj" \
-            --scheme "Go Fruits" \
+            --project "Candy Pink Ball.xcodeproj" \
+            --scheme "Candy Pink Ball" \
             --config Release
 
     artifacts:
